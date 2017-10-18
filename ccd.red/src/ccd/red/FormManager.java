@@ -2,11 +2,11 @@ package ccd.red;
 
 import java.util.List;
 
-public class SquaresAndRectangles {
+public class FormManager {
 
 	private List<Rectangle2> rectangles;
 
-	public SquaresAndRectangles(List<Rectangle2> rectangles) {
+	public FormManager(List<Rectangle2> rectangles) {
 		this.rectangles = rectangles;
 	}
 
@@ -19,7 +19,6 @@ public class SquaresAndRectangles {
 	}
 
 	public void doubleAllAreas() {
-		this.rectangles.stream().forEach(r -> r.);
 		
 	}
 
