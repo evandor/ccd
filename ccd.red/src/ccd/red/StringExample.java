@@ -2,12 +2,16 @@ package ccd.red;
 
 public class StringExample {
 
-	private static final int MAX = 5;
+    private static final int MAX = 5;
 
-	public static void main(String[] args) {
-		for(int i = Integer.valueOf(args[0]); i < MAX; i++) {
-			String val = "this is iteration " + i + " of " + MAX;
-			System.out.println(val);
-		}
-	}
+    public static void main(String[] args) {
+        String aValue = "3";
+
+        new StringBuilder("this is iteration ").append(aValue).append(" of ").append(MAX).toString();
+
+
+        String val = "this is iteration " + aValue + " of " + MAX;
+
+        //s"this is iteration ${aValue} of ${MAX}"
+    }
 }

@@ -18,10 +18,10 @@ public class FormManager {
 		return this.rectangles.stream().map(r -> r.getPerimeter()).reduce((a,b) -> a + b).get();
 	}
 
-	public void doubleAllAreas() {
-		
+	public Double doubleAllAreas() {
+	    return 2 * sumUpArea();
 	}
 
 
-	
+
 }
